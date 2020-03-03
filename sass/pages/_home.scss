@@ -7,27 +7,20 @@ table {
   width: 90%;
   border: 1px solid black;
   padding: 5rem;
-  border-collapse: separate;
-  border-spacing: 2rem 2rem;
-  background: rgb(202, 203, 219);
+  border-spacing: 1.5rem;
+  text-align: center;
   background: linear-gradient(
     rgba(229, 249, 242, 1) 72%,
     rgba(156, 174, 162, 1) 93%
   );
-  box-shadow: 0 1rem 5rem black;
-
-  td > p {
-    margin-top: 0.2rem;
-    font-size: 2rem;
-  }
+  box-shadow: 0 1rem 5rem $color-black;
 
   td {
-    text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 5%;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    font-size: 1rem;
+    border: 1px solid $color-black;
+    border-radius: 0.4rem;
+    font-size: 0.85rem;
     font-style: italic;
     transition: all 0.2s;
 
@@ -37,6 +30,11 @@ table {
     &:hover {
       transform: scale(2);
     }
+
+    p {
+      margin-top: 0.4rem;
+      font-size: 2rem;
+    }
   }
 }
 
@@ -45,35 +43,34 @@ tr {
   &:nth-child(n + 1):nth-child(-n + 6) td:last-child {
     background-color: $color-viol;
   }
-  /* column from Fluorine to Astatine */
-  &:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
-    background-color: $color-orange;
+  //Livermorium
+  &:nth-last-child(3) td:nth-last-child(3) {
+    background-color: $color-viol;
+  }
+
+  /* column from Nitrogen to Phosphorus */
+  &:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
+    background-color: $color-yellow;
   }
   /* column from Oxygen to Selenium */
   &:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
     background-color: $color-yellow;
   }
-  /* column from Telurium to Polonium */
-  &:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
-    background-color: $color-dunno;
-  }
-  /* column from Nitrogen to Phosphorus */
-  &:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
+  //Carbon
+  &:nth-child(2) td:nth-last-child(5) {
     background-color: $color-yellow;
   }
-
-  /* column from Arsenic to Antimony */
-  &:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
-    background-color: $color-dunno;
-  }
-
-  /* first column from Lithium to Francium*/
-  &:nth-child(n + 2):nth-child(-n + 7) td:first-child {
-    background-color: $color-blue;
+  //Hydrogen
+  &:first-child td:nth-child(1) {
+    background-color: $color-yellow;
   }
 
   /* second column from Berylium to Radium*/
   &:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2) {
+    background-color: $color-rosy;
+  }
+  //Unonoctium
+  &:nth-last-child(3) td:last-child {
     background-color: $color-rosy;
   }
 
@@ -96,63 +93,65 @@ tr {
     background-color: $color-third;
   }
 
+  //Bismuth
+  &:nth-last-child(4) td:nth-last-child(4) {
+    background-color: $color-third;
+  }
+
   /* column from Solicum to Germanium */
   &:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
     background-color: $color-dunno;
   }
-
-  /* Last 2 rows of the table*/
-  &:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
-    background-color: $color-light-blue;
+  /* column from Arsenic to Antimony */
+  &:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
+    background-color: $color-dunno;
+  }
+  //Boron
+  &:nth-child(2) td:nth-last-child(6) {
+    background-color: $color-dunno;
+  }
+  /* column from Telurium to Polonium */
+  &:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
+    background-color: $color-dunno;
   }
 
   &:last-child td:nth-child(n + 2):nth-child(-n + 15) {
     background-color: $color-blue;
   }
 
-  // //weirdos guys in the family
-  //Hydrogen
-  &:first-child td:nth-child(1) {
-    background-color: $color-yellow;
+  /* first column from Lithium to Francium*/
+  &:nth-child(n + 2):nth-child(-n + 7) td:first-child {
+    background-color: $color-blue;
   }
-  //Boron
-  &:nth-child(2) td:nth-last-child(6) {
-    background-color: $color-dunno;
-  }
-  //Unonoctium
-  &:nth-last-child(3) td:last-child {
-    background-color: $color-rosy;
-  }
+
   //Ununseptium
   &:nth-last-child(3) td:nth-last-child(2) {
     background-color: $color-blue;
-  }
-  //Livermorium
-  &:nth-last-child(3) td:nth-last-child(3) {
-    background-color: $color-viol;
-  }
-  //Livermorium
-  &:nth-last-child(3) td:nth-last-child(4) {
-    background-color: $color-orange;
-  }
-  //Bismuth
-  &:nth-last-child(4) td:nth-last-child(4) {
-    background-color: $color-third;
-  }
-  //Carbon
-  &:nth-child(2) td:nth-last-child(5) {
-    background-color: $color-yellow;
-  }
-
-  //empty blue-light
-  &:nth-child(6) td:nth-last-child(16) {
-    background-color: $color-light-blue;
-    border: 1px solid black;
   }
 
   //empty blue-dark
   &:nth-child(7) td:nth-last-child(16) {
     background-color: $color-blue;
-    border: 1px solid black;
+    border: 1px solid $color-black;
+  }
+
+  //Livermorium
+  &:nth-last-child(3) td:nth-last-child(4) {
+    background-color: $color-orange;
+  }
+  /* column from Fluorine to Astatine */
+  &:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
+    background-color: $color-orange;
+  }
+
+  //empty blue-light
+  &:nth-child(6) td:nth-last-child(16) {
+    background-color: $color-light-blue;
+    border: 1px solid $color-black;
+  }
+
+  /* Last 2 rows of the table*/
+  &:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
+    background-color: $color-light-blue;
   }
 }
