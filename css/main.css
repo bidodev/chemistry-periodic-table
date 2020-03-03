@@ -17,7 +17,6 @@ body {
 }
 
 .periodic__table {
-  width: 100%;
   margin: 10rem auto;
 }
 
@@ -25,28 +24,40 @@ table {
   margin: 0 auto;
   width: 90%;
   border: 1px solid black;
-  padding: 3rem;
+  padding: 5rem;
   border-collapse: separate;
   border-spacing: 2rem 2rem;
   background: #cacbdb;
-  background: linear-gradient(94deg, #cacbdb 0%, #e5f9f2 72%, #9caea2 93%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(72%, #e5f9f2), color-stop(93%, #9caea2));
+  background: linear-gradient(#e5f9f2 72%, #9caea2 93%);
   -webkit-box-shadow: 0 1rem 5rem black;
           box-shadow: 0 1rem 5rem black;
 }
 
+table td > p {
+  margin-top: 0.2rem;
+  font-size: 2rem;
+}
+
 table td {
+  text-align: center;
   padding: 2rem;
-  width: 2rem;
+  width: 5%;
   border: 1px solid black;
   border-radius: 0.5rem;
-  font-size: 2rem;
+  font-size: 1rem;
   font-style: italic;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 table td:empty {
   border: 0px;
+}
+
+table td:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 tr {
@@ -107,11 +118,11 @@ tr:nth-child(n + 6):nth-child(-n + 7) td:nth-child(n + 4):nth-child(-n + 12) {
 }
 
 tr:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6) {
-  background-color: rgba(165, 82, 82, 0.5);
+  background-color: #a55252;
 }
 
 tr:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5) {
-  background-color: rgba(165, 82, 82, 0.5);
+  background-color: #a55252;
 }
 
 tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
@@ -119,7 +130,7 @@ tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
 }
 
 tr:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
-  background-color: #3498dbb0;
+  background-color: #8bf1ff;
 }
 
 tr:last-child td:nth-child(n + 2):nth-child(-n + 15) {
@@ -151,7 +162,7 @@ tr:nth-last-child(3) td:nth-last-child(4) {
 }
 
 tr:nth-last-child(4) td:nth-last-child(4) {
-  background-color: rgba(165, 82, 82, 0.5);
+  background-color: #a55252;
 }
 
 tr:nth-child(2) td:nth-last-child(5) {
@@ -159,7 +170,7 @@ tr:nth-child(2) td:nth-last-child(5) {
 }
 
 tr:nth-child(6) td:nth-last-child(16) {
-  background-color: #3498dbb0;
+  background-color: #8bf1ff;
   border: 1px solid black;
 }
 

@@ -1,5 +1,4 @@
 .periodic__table {
-  width: 100%;
   margin: 10rem auto;
 }
 
@@ -7,29 +6,36 @@ table {
   margin: 0 auto;
   width: 90%;
   border: 1px solid black;
-  padding: 3rem;
+  padding: 5rem;
   border-collapse: separate;
   border-spacing: 2rem 2rem;
   background: rgb(202, 203, 219);
   background: linear-gradient(
-    94deg,
-    rgba(202, 203, 219, 1) 0%,
     rgba(229, 249, 242, 1) 72%,
     rgba(156, 174, 162, 1) 93%
   );
   box-shadow: 0 1rem 5rem black;
 
+  td > p {
+    margin-top: 0.2rem;
+    font-size: 2rem;
+  }
+
   td {
+    text-align: center;
     padding: 2rem;
-    width: 2rem;
+    width: 5%;
     border: 1px solid black;
     border-radius: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-style: italic;
-    transition: all 1s;
+    transition: all 0.2s;
 
     &:empty {
       border: 0px;
+    }
+    &:hover {
+      transform: scale(2);
     }
   }
 }
