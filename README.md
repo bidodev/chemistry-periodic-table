@@ -10,4 +10,4 @@ Please check the final version [here](https://bidodev.github.io/chemistry-period
 
 #### A small previous of the final result.
 
-![previous](./img/img.png)
+[![alt text][./img/img.png]][https://bidodev.github.io/chemistry-periodic-table/]
