@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -12,8 +12,4 @@ html {
   font-size: 62.5%;
   //this is equal 62.5% of 16px, which is equal 10px if the user hasn't changed the default browser value
   //now our 1rem is equal 10px
-}
-
-body {
-  box-sizing: border-box;
 }
