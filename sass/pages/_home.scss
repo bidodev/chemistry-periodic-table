@@ -1,13 +1,14 @@
 .periodic__table {
-  margin: 10rem auto;
+  margin: 5rem auto;
 }
 
 table {
+  table-layout: fixed;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   border: 1px solid black;
   padding: 5rem;
-  border-spacing: 1.5rem;
+  border-spacing: 1rem;
   text-align: center;
   background: linear-gradient(
     rgba(229, 249, 242, 1) 72%,
@@ -17,7 +18,7 @@ table {
 
   td {
     padding: 1rem;
-    width: 5%;
+    width: 2%;
     border: 1px solid $color-black;
     border-radius: 0.4rem;
     font-size: 0.85rem;
