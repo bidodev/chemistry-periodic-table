@@ -86,17 +86,17 @@ tr {
 
   /* column from Aluminum to Ununtrium */
   &:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6) {
-    background-color: $color-third;
+    background-color: $color-four;
   }
 
   /* column from Tim to Flevorium */
   &:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5) {
-    background-color: $color-third;
+    background-color: $color-four;
   }
 
   //Bismuth
   &:nth-last-child(4) td:nth-last-child(4) {
-    background-color: $color-third;
+    background-color: $color-four;
   }
 
   /* column from Solicum to Germanium */
