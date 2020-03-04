@@ -1,9 +1,13 @@
-# chemistry-periodic-table
+# Chemistry Periodic Table
 
-CSS Selectors Exercise
+## Purpose of the Exercise
 
-Visit the Final Versions: https://bidodev.github.io/chemistry-periodic-table/
+Training with CSS selectors **:nth-child()**
 
-## Final Result
+### Final Result
+
+Please check the final version [Here](https://bidodev.github.io/chemistry-periodic-table/).
+
+#### A small Previous of the Result.
 
 ![previous](./img/img.png)
