@@ -6,8 +6,8 @@ Training with CSS selectors **:nth-child()**
 
 ### Final Result
 
-Please check the final version [Here](https://bidodev.github.io/chemistry-periodic-table/).
+Please check the final version [here](https://bidodev.github.io/chemistry-periodic-table/).
 
-#### A small Previous of the Result.
+#### A small previous of the final result.
 
 ![previous](./img/img.png)
