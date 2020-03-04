@@ -35,9 +35,8 @@ table td {
   border: 1px solid #000;
   border-radius: 0.4rem;
   font-size: 1rem;
-  font-style: italic;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 table td:empty {
@@ -52,6 +51,7 @@ table td:hover {
 table td p {
   margin-top: 0.4rem;
   font-size: 2rem;
+  font-style: italic;
 }
 
 /* last column from element 1 (helium) until 6 (radon)*/
@@ -68,7 +68,7 @@ tr:first-child td:nth-child(1) {
   background-color: #f4d03f;
 }
 
-/* second column from Berylium to Radium*/
+/* Rosy Family*/
 tr:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2),
 tr:nth-last-child(3) td:last-child {
   background-color: rosybrown;
@@ -87,7 +87,7 @@ tr:nth-last-child(4) td:nth-last-child(4) {
   background-color: #a38080;
 }
 
-/* column from Solicum to Germanium */
+/* Dark Brawn*/
 tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5),
 tr:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4),
 tr:nth-child(2) td:nth-last-child(6),
