@@ -12,7 +12,7 @@ html {
 }
 
 .periodic__table {
-  margin: 5rem auto;
+  margin: 7rem auto;
 }
 
 table {
@@ -21,7 +21,7 @@ table {
   width: 95%;
   border: 1px solid black;
   padding: 5rem;
-  border-spacing: 1rem;
+  border-spacing: 1.5rem;
   text-align: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(72%, #e5f9f2), color-stop(93%, #9caea2));
   background: linear-gradient(#e5f9f2 72%, #9caea2 93%);
@@ -33,17 +33,19 @@ table td {
   padding: 1rem;
   width: 2%;
   border: 1px solid #000;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   font-size: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  /* Hover will efect only the Tds that aren't empty */
+  /* Size and italic for the element*/
 }
 
 table td:empty {
   border: 0px;
 }
 
-table td:hover {
+table td:hover:not(:empty) {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
